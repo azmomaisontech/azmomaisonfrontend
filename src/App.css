@@ -1,33 +1,135 @@
-.App {
-  text-align: center;
+.fontsize {
+  font-family: Varela Round;
+  font-size: 15px;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+.hover {
+  cursor: pointer;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbarcolor {
+  background-color: #cccccc;
+}
+
+.effectcolor {
+  background-color: #d6f8d6;
+}
+
+.bodyimage {
+  background-image: url("https://res.cloudinary.com/azmotech/image/upload/v1565945202/Living-Room-Glass-Walls-Apartment-in-Vancouver.jpg");
+  background-color: #cccccc;
+  height: 70vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.bodytext {
+  position: absolute;
+  left: 40%;
+  right: 40%;
+  bottom: 40%;
+  top: 40%;
+  padding: 10px;
+  border-radius: 5px;
   display: flex;
-  flex-direction: column;
+  opacity: 0.8;
+}
+
+.button {
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: #5f4c4c;
+  font-weight: bold;
+}
+
+.fixed-size-container {
+  max-width: 1400px;
+  margin: 20px auto 0 auto;
+  background-color: #fff;
+  padding: 30px 0;
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.fixed-size {
+  width: 380px;
+  height: 261px;
+  background-color: #282c34;
+  color: #fff;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  transition: all 0.2s ease-in-out;
+}
+
+.fixed-size:hover {
+  transform: scale(1.1);
+}
+
+.contactitem {
+  max-width: 750px;
+  margin: 20px auto 0 auto;
+  padding: 30px;
+  background-color: #fff;
+  font-family: “Varela Round”;
+}
+
+.formitemgrid {
+  max-width: 750px;
+  margin: 20px auto 0 auto;
+  padding: 30px;
+  background-color: #fff;
+  font-family: “Varela Round”;
+}
+
+.submitb {
   color: white;
+  background-color: #625550;
+  cursor: pointer;
+  border-radius: 4px;
 }
 
-.App-link {
-  color: #61dafb;
+.formitem > input,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.productcontainer {
+  font-family: “Varela Round”;
+  margin: 20px auto 250px auto;
+}
+
+.notfoundwrapper {
+  height: 400px;
+  max-width: 700px;
+  margin: 40px auto 80px auto;
+  background-color: #625550;
+  display: flex;
+}
+
+.notfounditem {
+  color: #fff;
+  margin: auto;
+  font-family: “Varela Round”;
+}
+
+@media (max-width: 900px) {
+  .bodytext {
+    left: 30%;
+    right: 30%;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+@media (max-width: 600px) {
+  .bodytext {
+    left: 20%;
+    right: 20%;
   }
 }
